@@ -30,7 +30,7 @@ var abi = JSON.parse(compiled.contracts[":HelloWorld"].interface)
 //create var with contract
 var hwContract = web3.eth.contract(abi)
 
-
+web3.personal.unlockAccount(web3.eth.coinbase,"1")
 const deployed = hwContract.new({
   from: web3.eth.accounts[0],
   data: "0x"+compiled.contracts[':HelloWorld'].bytecode,
