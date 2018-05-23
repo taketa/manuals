@@ -33,7 +33,7 @@ var hwContract = web3.eth.contract(abi)
 
 const deployed = hwContract.new({
   from: web3.eth.accounts[0],
-  data: compiled.contracts[':HelloWorld'].bytecode,
+  data: "0x"+compiled.contracts[':HelloWorld'].bytecode,
   gas: 4700000,
   gasPrice: 10
 }, (error, contract) => {
