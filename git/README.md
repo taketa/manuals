@@ -17,7 +17,15 @@ git revert HEAD --no-edit
 git reset --hard v1
 10) Удаление тега oops
 git tag -d oops
-11) Изменить предидущий коммит
+11) Изменить предыдущий коммит
 git commit --amend -m "Add an author/email comment"
-12) 
-
+12) поиск последнего коммита
+git hist --max-count=1 
+C Алиасами: 
+git type <hash>
+git dump <hash>
+13) Создать и перейти на ветку
+git checkout -b style
+14) Переключение на ветку Master
+git checkout master
+15) 
